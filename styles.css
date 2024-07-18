@@ -380,6 +380,7 @@ p {
   height: 8vh;
   background-color: #000;
   padding: 8px;
+  z-index: 1;
 }
 .ad-banner {
   background: linear-gradient(
