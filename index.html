@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <aside class="side-section">
+        <section class="side-section-one">
+          <p id="menu-logo">
+            <i class="fa-brands fa-spotify fa-xl"></i><b>Spotify</b>
+          </p>
+          <p class="menu-icons"><i class="fa-solid fa-house fa-xl"></i>Home</p>
+          <p class="menu-icons">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>Search
+          </p>
+        </section>
+        <section class="side-section-two">
+          <div class="side-section-two-header">
+            <i class="fa-solid fa-chart-simple fa-xl"></i>
+            <p>Your Library</p>
+            <i class="fa-solid fa-plus fa-l plus-icon"></i>
+          </div>
+          <div class="scroll-area">
+            <div class="scrollarea-card">
+              <h3>Create your first playlist</h3>
+              <p>It's easy we will help you</p>
+              <button>Create playlist</button>
+            </div>
+            <div class="scrollarea-card">
+              <h3>Let's find some Podcast to follow</h3>
+              <p>We'll keep you updated on new episodes</p>
+              <button>Browse podcasts</button>
+            </div>
+          </div>
+
+          <div class="side-footer">
+            <ul class="side-footer-list">
+              <li>Leagal</li>
+              <li>Safety & Privacy Center</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+              <li>About Ads</li>
+              <li>Accessibility</li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+
+            <button><i class="fa-solid fa-globe"></i>English</button>
+          </div>
+        </section>
+      </aside>
+      <section class="main-section">
+        <nav class="nav-bar">
+          <div class="nav-slide-btn">
+            <div class="round-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="round-btn">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="nav-account-btn">
+            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn">Log in</button>
+          </div>
+        </nav>
+        <section class="main-content">
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Popular Artists</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178cb6926f44f620555ba444fca"
+                    alt="Pritam"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Pritam</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178c40600e02356cc86f0debe84"
+                    alt="Atif Aslam"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Atif Aslam</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178b19af0ea736c6228d6eb539c"
+                    alt="A R Rahman"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>A R Rahman</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178fc7c542c04b5f7dc8f1b1c16"
+                    alt="Anirudh Ravichander"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Anirudh Ravichander</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178b09a31f853166e721d4d46b2"
+                    alt="K K"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>K K</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+              <div class="card-1">
+                <div class="card-image-round">
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000f178bc959d7569618ec2af2210f5"
+                    alt="Sonu Nigam"
+                  />
+                  <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Sonu Nigam</p>
+                  <p>Artist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Popular albums</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae"
+                    alt="Moosetape"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Moosetape</p>
+                  <p>Sidhu Moose Wala</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                    alt="Aashiqui 2"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Aashiqui 2</p>
+                  <p>Mithoon</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                    alt="ANIMAL"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>ANIMAL</p>
+                  <p>Manan Bhardwaj</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e021d93bb16bf3025587d001f45"
+                    alt="Aavesham"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Aavesham (Original Motion Picture Soundtrack)</p>
+                  <p>Sushin Shyam</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e02d5f4378b1ffc9119fdc7306d"
+                    alt="Sajni"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Sajni (From "Laapataa Ladies")</p>
+                  <p>Ram Sampath</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b"
+                    alt="Rockstar"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Rockstar</p>
+                  <p>A.R. Rahman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Popular radio</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                    alt="Arijit Singh Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Arijit Singh Radio</p>
+                  <p>With Neha Kakkar,Pritam,KK and more</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/07iEy1AecUPVzfC2J2gCHR/en-GB"
+                    alt="Ikka Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Ikka Radio</p>
+                  <p>With Karma,Raga,Muhfaad and more</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0oOet2f43PA68X5RxKobEy/en-GB"
+                    alt="Shreya Ghoshal Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Shreya Ghoshal Radio</p>
+                  <p>With Sonu Nigm,Sunidhi Chauhan Shaan and more</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/70B80Lwx2sxti0M1Ng9e8K/en-GB"
+                    alt="Udit Narayan Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Udit Narayan Radio</p>
+                  <p>With Kumar sanu ,Alka Yagnik and more</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB"
+                    alt="A.R. Rahman Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>A.R. Rahman Radio</p>
+                  <p>With Shankar Mahadevan,Anirudh Ravichander and more</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2ae6PxICSOZHvjqiCcgon8/en-GB"
+                    alt="S. P. Balasubrahmanyam Radio"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>S. P. Balasubrahmanyam Radio</p>
+                  <p>With Mano, Ilaiyaraaja, S. Janaki and more</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Featured charts</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                    alt="Top Songs - Global"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Top Songs - Global</p>
+                  <p>
+                    Your weekly update of the most played tracks right now -
+                    Global.
+                  </p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                    alt="Top Songs - USA"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Top Songs - USA</p>
+                  <p>Your weekly update of the most played tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                    alt="Top 50 - Global"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Top 50 - Global</p>
+                  <p>Your daily update of the most played tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                    alt="Top 50 - USA"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Top 50 - USA</p>
+                  <p>Your daily update of the most played tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                    alt="Viral 50 - Global"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Viral 50 - Global</p>
+                  <p>Your daily update of the most viral tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg"
+                    alt="Viral 50 - USA"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Viral 50 - USA</p>
+                  <p>Your daily update of the most viral tracks right now</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Spotify Playlists</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000024fd2f505388dffac41bf82d3"
+                    alt="Dinner & Chill"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Dinner & Chill</p>
+                  <p>Gentle Indie songs for a relaxed dinner.</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded"
+                    alt="Dinner Lounge"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Dinner Lounge</p>
+                  <p>Your weekly update of the most played tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000024b04e77913de1fc2a4b819df"
+                    alt="Beer & Wings"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Beer & Wings</p>
+                  <p>Cold beer. Hot wings. Great rock.</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377"
+                    alt="Kitchen Swagger"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Kitchen Swagger</p>
+                  <p>Gettin' figgy with it, bana-na-na-nanana</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002b0537010ede61af1f1ea3e3e"
+                    alt="Soul Cuisine"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Soul Cuisine</p>
+                  <p>Your daily update of the most viral tracks right now</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000028727fca53fe6965b009efd37"
+                    alt="Bossa Nova Dinner"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Bossa Nova Dinner</p>
+                  <p>Soundtrack your cozy dinner with bossa nova jazz.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="card-section">
+            <div class="maincard-header">
+              <h2>Trending Episodes</h2>
+              <p>Show All</p>
+            </div>
+            <div class="maincard-section">
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f9f5d8dab58a909ef23fee583"
+                    alt="Welcome Back RJ Balaji"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Welcome Back RJ Balaji</p>
+                  <p>Nallanna Murukku - The RJ Balaji Podcast</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d"
+                    alt="Hotel of horrers"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Hotel of horrors</p>
+                  <p>Rotten Mango</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f"
+                    alt="Mahabharata"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Mahabharata Episode 1: Beginnings</p>
+                  <p>The Stories of Mahabharata</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f977f6de2920c47bb781ed6e5"
+                    alt="Anubis"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Anubis: God of Death - Part 2</p>
+                  <p>I hear you with Aahana Kumra (Hindi Thriller Podcast)</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f6807eaee16197dac1dd840e8"
+                    alt="Ye Na Thi Hamari Qismat"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Ep 8 - Ye Na Thi Hamari Qismat</p>
+                  <p>Unconventional Ghalib</p>
+                </div>
+              </div>
+              <div class="card-2">
+                <div class="card-image-square">
+                  <img
+                    src="https://i.scdn.co/image/ab67656300005f1f977f6de2920c47bb781ed6e5"
+                    alt="Anubis"
+                  />
+                  <div class="play-btn-2">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <p>Anubis: God of Death - Part 1</p>
+                  <p>I hear you with Aahana Kumra (Hindi Thriller Podcast)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <footer class="main-footer">
+            <div class="main-footer-links">
+              <div class="company">
+                <h3>Company</h3>
+                <ul>
+                  <li>About</li>
+                  <li>Jobs</li>
+                  <li>For the Record</li>
+                </ul>
+              </div>
+              <div class="community">
+                <h3>Communities</h3>
+                <ul>
+                  <li>For Artists</li>
+                  <li>Developers</li>
+                  <li>Advertising</li>
+                  <li>Investors</li>
+                  <li>Vendors</li>
+                </ul>
+              </div>
+              <div class="useful-links">
+                <h3>Useful links</h3>
+                <ul>
+                  <li>Support</li>
+                  <li>Free Mobile App</li>
+                </ul>
+              </div>
+              <div class="spotify-plans">
+                <h3>Spotify Plans</h3>
+                <ul>
+                  <li>Premium Individual</li>
+                  <li>Premium Duo</li>
+                  <li>Premium Family</li>
+                  <li>Premium Student</li>
+                  <li>Spotify Free</li>
+                </ul>
+              </div>
+              <div class="social-media">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-twitter fa-xl"></i>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </div>
+            </div>
+            <p><i class="fa-regular fa-copyright"></i> 2024 Spotify AB</p>
+          </footer>
+        </section>
+      </section>
+    </main>
+    <footer class="footer-ad">
+      <div class="ad-banner">
+        <div class="adtext">
+          <p>Preview of Spotify</p>
+          <p>
+            Sign up to get unlimited songs and podcasts with occssional ads.No
+            credit card needed
+          </p>
+        </div>
+        <button>Sign Up for Free</button>
+      </div>
+    </footer>
+  </body>
+</html>
