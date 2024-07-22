@@ -221,6 +221,7 @@ p {
 }
 .card-section {
   padding: 15px;
+  gap: 0;
 }
 .maincard-header {
   display: flex;
@@ -246,6 +247,7 @@ p {
 }
 .maincard-section {
   display: flex;
+  gap: 10px;
 }
 .card-1 {
   width: 200px;
@@ -260,7 +262,7 @@ p {
 }
 .card-2 {
   width: 200px;
-  height: 280px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -296,8 +298,6 @@ p {
 .play-btn,
 .play-btn-2 {
   display: none;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   height: 50px;
   width: 50px;
@@ -306,17 +306,21 @@ p {
 }
 .play-btn {
   left: 65%;
-  top: 64%;
+  top: 60%;
 }
 .play-btn-2 {
-  left: 58%;
-  top: 58%;
+  left: 56%;
+  top: 56%;
 }
 .card-1:hover .play-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-2:hover .play-btn-2 {
   display: flex;
+    justify-content: center;
+  align-items: center;
 }
 
 .play-btn,
@@ -328,6 +332,15 @@ p {
   flex-direction: column;
   padding-left: 8px;
   gap: 6px;
+}
+.card-info p{
+   /* To reduce the text line */
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: normal;
 }
 .card-info p:nth-child(2) {
   opacity: 50%;
@@ -413,4 +426,717 @@ p {
 }
 .ad-banner button:hover {
   transform: scale(1.03);
+}
+
+/* For Mobile Devices */
+@media (max-width: 430px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    gap: 0;
+  }
+  .side-section {
+    flex: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .side-section-one {
+    width: 100%;
+    height: 100%;
+    background-color: #0b0c0c;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px 15px;
+    gap: 0px;
+    font-weight: 700;
+  }
+  .side-section-one p:nth-of-type(2),
+  .side-section-one p:nth-of-type(3)  {
+    display: none;
+  }
+  .side-section-two{
+    display: none;
+  }
+  .nav-slide-btn {
+    display: flex;
+    gap: 2px;
+  }
+  .nav-account-btn {
+    display: flex;
+    gap: 10px;
+  }
+  .login-btn {
+    padding: 8px 16px;
+  }
+  .card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .maincard-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .maincard-header {
+    padding: 5px;
+  }
+  .maincard-header h2 {
+    font-size: 1rem;
+  }
+  .maincard-header p {
+    font-size: .8rem;
+  }
+  .card-1 {
+    width: 130px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+  }
+  .card-2 {
+    width: 120px;
+    height: 230px;
+  }
+
+  .play-btn,
+.play-btn-2 {
+  height: 40px;
+  width: 40px;
+}
+.play-btn {
+  left: 55%;
+  top: 60%;
+}
+.play-btn-2 {
+  left: 50%;
+  top: 50%;
+}
+.card-info {
+  gap: 0px;}
+
+.main-footer{
+  width: inherit;
+}
+.main-footer-links {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px;
+  margin-bottom: 20px;
+  gap: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.main-footer p {
+  padding: 0px;
+  padding-bottom: 0px;
+  opacity: 70%;
+}
+.main-footer h3 {
+  padding-bottom: 5px;
+}
+.main-footer ul {
+  gap: 0px;
+}
+.footer-ad{
+  display: none;
+}
+}
+
+  /* Styles for screens between 431px and 768px wide  (tablets)*/
+@media (min-width: 431px) and (max-width: 768px) {
+  .side-section {
+  flex: 2; 
+  }
+  .side-section-two {
+    display: flex;
+    flex-direction: column;
+    height: 73%;
+  }
+  .login-btn {
+    padding: 8px 16px;
+  }
+  .card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .maincard-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .maincard-header {
+    padding: 5px;
+  }
+  .maincard-header h2 {
+    font-size: 1rem;
+  }
+  .maincard-header p {
+    font-size: .8rem;
+  }
+  .card-1 {
+    width: 130px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+  }
+  .card-2 {
+    width: 120px;
+    height: 230px;
+  }
+
+  .play-btn,
+.play-btn-2 {
+  height: 40px;
+  width: 40px;
+}
+.play-btn {
+  left: 55%;
+  top: 60%;
+}
+.play-btn-2 {
+  left: 50%;
+  top: 50%;
+}
+.card-info {
+  gap: 0px;}
+
+.main-footer{
+  width: inherit;
+}
+.main-footer-links {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+  margin-bottom: 20px;
+  gap: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.main-footer p {
+  padding: 0px;
+  padding-bottom: 0px;
+  opacity: 70%;
+}
+.main-footer h3 {
+  padding-bottom: 5px;
+}
+.main-footer ul {
+  gap: 0px;
+}
+
+.ad-banner p{
+  font-size: .8rem;
+
+}
+.ad-banner button {
+  font-weight: 700;
+  font-size: .8rem;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .side-section-two {
+    display: flex;
+    flex-direction: column;
+    height: 73%;
+  }
+  .login-btn {
+    padding: 8px 16px;
+  }
+  .card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .maincard-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .maincard-header {
+    padding: 5px;
+  }
+  .maincard-header h2 {
+    font-size: 1rem;
+  }
+  .maincard-header p {
+    font-size: .8rem;
+  }
+  .card-1 {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+  }
+  .card-2 {
+    width: 120px;
+    height: 230px;
+  }
+
+  .play-btn,
+.play-btn-2 {
+  height: 40px;
+  width: 40px;
+}
+.play-btn {
+  left: 55%;
+  top: 60%;
+}
+.play-btn-2 {
+  left: 50%;
+  top: 50%;
+}
+.card-info {
+  gap: 0px;}
+
+.main-footer{
+  width: inherit;
+}
+.main-footer-links {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+  margin-bottom: 20px;
+  gap: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.main-footer p {
+  padding: 0px;
+  padding-bottom: 0px;
+  opacity: 70%;
+}
+.main-footer h3 {
+  padding-bottom: 5px;
+}
+.main-footer ul {
+  gap: 0px;
+}
+
+.ad-banner p{
+  font-size: .8rem;
+
+}
+.ad-banner button {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.side-section {
+  gap: 8px;
+}
+.side-section-one {
+  gap: 15px;
+}
+.side-section-one p{
+  font-size: 1rem;
+}
+.side-section-two p{
+  font-size: 1rem;
+  }
+
+#menu-logo {
+ gap: 20px;
+}
+
+.menu-icons {
+font-size: 1rem;
+}
+
+.side-section-two-header i,
+p {
+  font-size: 1rem;
+}
+/* side-section-scroll area */
+.scroll-area {
+ padding: 20px;
+}
+.scroll-area button{
+  width: 100%;
+ }
+.side-footer-list li {
+  font-size: .6rem;
+
+}
+
+.side-footer button {
+  font-size: .6rem;
+  padding: 5px 20px;
+}
+.side-footer button i {
+  font-size: 1rem;
+}
+}
+@media (min-width: 1200px) and (max-width: 1679px) {
+  .side-section-two {
+    display: flex;
+    flex-direction: column;
+    height: 73%;
+  }
+  .login-btn {
+    padding: 8px 16px;
+  }
+  .card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .maincard-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .maincard-header {
+    padding: 5px;
+  }
+  .maincard-header h2 {
+    font-size: 1rem;
+  }
+  .maincard-header p {
+    font-size: .8rem;
+  }
+  .card-1 {
+    width: 140px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+  }
+  .card-2 {
+    width: 160px;
+    height: 230px;
+  }
+
+  .play-btn,
+.play-btn-2 {
+  height: 40px;
+  width: 40px;
+}
+.play-btn {
+  left: 60%;
+  top: 60%;
+}
+.play-btn-2 {
+  left: 62%;
+  top: 62%;
+}
+.card-info {
+  gap: 0px;}
+
+.main-footer{
+  width: inherit;
+  margin-top: 30px;
+}
+.main-footer-links {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+  margin-bottom: 20px;
+  gap: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.main-footer p {
+  padding: 0px;
+  padding-bottom: 0px;
+  opacity: 70%;
+}
+.main-footer h3 {
+  padding-bottom: 5px;
+}
+.main-footer ul {
+  gap: 0px;
+}
+
+.ad-banner p{
+  font-size: .8rem;
+
+}
+.ad-banner button {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.side-section {
+  gap: 8px;
+}
+.side-section-one {
+  gap: 15px;
+}
+.side-section-one p{
+  font-size: 1rem;
+}
+.side-section-two p{
+  font-size: 1rem;
+  }
+
+#menu-logo {
+ gap: 20px;
+}
+
+.menu-icons {
+font-size: 1rem;
+}
+
+.side-section-two-header i,
+p {
+  font-size: 1rem;
+}
+/* side-section-scroll area */
+.scroll-area {
+ padding: 20px;
+}
+.scroll-area button{
+  width: 100%;
+ }
+.side-footer-list li {
+  font-size: .6rem;
+
+}
+
+.side-footer button {
+  font-size: .6rem;
+  padding: 5px 20px;
+}
+.side-footer button i {
+  font-size: 1rem;
+}
+}
+/* CSS rules for screens wider than 1680px */
+@media screen and (min-width: 1680px) {
+  i{
+    font-size: 1.5rem;
+  }
+  .card-section {
+   padding: 55px;
+  }
+  .maincard-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .maincard-header {
+    padding: 5px;
+  }
+  .maincard-header h2 {
+    font-size: 2rem;
+  }
+  .maincard-header p {
+    font-size: 1.5rem;
+  }
+  .card-1 {
+    width: 250px;
+    height: 280px;
+  }
+  .card-2 {
+    width: 240px;
+    height: 320px;
+  }
+  .play-btn,
+.play-btn-2 {
+  height: 80px;
+  width: 80px;
+}
+.play-btn {
+  left: 65%;
+  top: 60%;
+}
+.play-btn-2 {
+  left: 56%;
+  top: 56%;
+}
+.card-info {
+  gap: 30px;
+}
+  .card-info p:nth-child(2) {
+   font-size: 1.2rem;
+  }
+  .card-info p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .nav-bar {
+    padding: 20px 26px 20px 20px;
+  }
+  .round-btn {
+    height: 60px;
+    width: 60px;
+  }
+  .nav-account-btn {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .signup-btn {
+    font-size: 1.8rem;
+  }
+  .login-btn {
+    padding: 24px 52px;
+    border-radius: 35px;
+  font-size: 1.8rem;
+  border-radius: 50px;
+  }
+.main-footer-links {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.main-footer p {
+  padding: 40px;
+  padding-bottom: 220px;
+  opacity: 70%;
+}
+.main-footer h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.main-footer ul {
+  gap: 20px;
+}
+.main-footer i{
+  font-size: 2.5rem;
+}
+.main-footer li {
+font-size: 1.6rem;
+
+}
+.social-media {
+  gap: 20px;
+}
+.social-media i {
+  height: 80px;
+  width: 80px;
+}
+.social-media i:hover {
+  background-color: #a39c9c;
+}
+.ad-banner{
+  height: 10vh;
+  padding: 20px;
+}
+.ad-banner p{
+  font-size: 1.5rem;
+}
+.ad-banner button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 25px 60px;
+  border-radius: 50px;
+}
+.side-section {
+  gap: 20px;
+}
+.side-section-one {
+  gap: 35px;
+}
+.side-section-one p{
+font-size: 2rem;
+}
+.side-section-two p{
+  font-size: 2rem;
+  }
+.side-section-one p:last-child:hover {
+  opacity: 100%;
+}
+#menu-logo {
+  padding: 0 20px;
+  gap: 55px;
+}
+
+.menu-icons {
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.side-section-two-header .plus-icon {
+  padding: 20px;  
+}
+.side-section-two-header i,
+p {
+  font-size: 2.8rem;
+}
+/* side-section-scroll area */
+.scroll-area {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding: 10px 20px;
+}
+.scrollarea-card { 
+  gap: 30px;
+  padding: 20px;
+}
+.scrollarea-card button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+.scrollarea-card h3 {
+  font-size: 2rem;
+}
+
+/* Side section Footer */
+.side-footer {
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.side-footer-list {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.side-footer-list li {
+  font-size: 1.2rem;
+
+}
+.side-footer-list li:last-child {
+  flex-basis: 100%;
+  padding-bottom: 20px;
+}
+.side-footer-list li a {
+  font-size: 1.2rem;
+}
+.side-footer-list li a:hover {
+  text-decoration: underline;
+}
+.side-footer button {
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.side-footer button i {
+  margin-right: 15px;
+}
 }
