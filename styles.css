@@ -105,7 +105,7 @@ p {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2 ease;
+  transition: transform 0.2s ease;
 }
 .scrollarea-card button:hover {
   transform: scale(1.03);
@@ -148,7 +148,7 @@ p {
   background-color: transparent;
   border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.2 ease;
+  transition: transform 0.2s ease;
 }
 .side-footer button:hover {
   transform: scale(1.03);
@@ -197,7 +197,7 @@ p {
   font-weight: 700;
   background-color: transparent;
   cursor: pointer;
-  transition: transform 0.2 ease ;
+  transition: transform 0.2s ease ;
 }
 .signup-btn:hover {
   transform: scale(1.03);
@@ -209,7 +209,7 @@ p {
   border-radius: 25px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2ss ease;
 }
 .login-btn:hover {
   transform: scale(1.03);
@@ -358,7 +358,7 @@ p {
   margin: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid rgba(216, 202, 202, 0.212);
+  border-bottom: 1px solid rgba(216, 202, 202, 0.2s12);
 }
 .main-footer-links li {
   list-style: none;
@@ -423,7 +423,7 @@ p {
   padding: 10px 15px;
   border-radius: 30px;
   cursor: pointer;
-  transition: transform 0.2 ease;
+  transition: transform 0.2s ease;
 }
 .ad-banner button:hover {
   transform: scale(1.03);
